@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<nifty>
+    <useControls filename="nifty-default-controls.xml"/>
+    <useStyles filename="nifty-default-styles.xml"/>
+    <useStyles filename="Interface/style/nifty-bad-style.xml"/>
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Empty screen zum verstecken des Menues -->
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <screen id="empty" controller="bad.vector.menu.BadScreenController">
+    </screen>
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <!-- start screen -->
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <screen id="start" controller="bad.vector.menu.BadScreenController">
+        <layer id="initlayer" childLayout="absolute">
+            <image id="background" height="100%" width="100%" filename="Interface/Menu/menu_background.png" childLayout="absolute" valign="top" y="0px" x="0px">
+                <panel id="title" childLayout="center" width="36.47%" height="20.28%" x="31.76%" valign="center" >
+                    <image id="badtitle" width="*" height="*" filename="Interface/Menu/title.png"/>
+                </panel>
+                <image id="contentframe" height="70.55%" width="90.35%" align="center" filename="Interface/Menu/frame.png" y="22%" x="4.8%"/>
+                <image id="choosebg" height="38.80%" width="64.82%" align="center" filename="Interface/Menu/start/choose_bg.png" y="50%" x="17.59%"/>
+                <image id="headline" height="8.82%" width="31.17%" filename="Interface/Menu/start/start_active.png" y="35%" x="34.42%"/>
+                <panel id="selection_main_start" height="37.04%" width="22.35%" childLayout="center" y="52%" x="21.63%">
+                       <image style="style_selection_main_start" height="*" width="*" filename="Interface/Menu/start/create-server.png">
+                       <interact onClick="screen(createserver_settings)" />
+                       </image>
+                </panel>
+                <panel id="selection_main_join" height="37.04%" width="22.35%" childLayout="center" y="52%" x="56.63%">
+                      <image style="style_selection_main_join" height="*" width="*" filename="Interface/Menu/start/join-server.png">
+                      <interact onClick="start(start)" />
+                      </image>
+                </panel>
+                <image height="4.41%" width="14.11%" valign="center" filename="Interface/Menu/menu_settings.png" y="26%" x="80%">
+                                <interact onClick="settings()" />
+                </image>
+            </image>
+        </layer>
+    </screen>
+    
+    <screen id="createserver_settings" controller="bad.vector.menu.BadScreenController">
+        <layer id="initlayer" childLayout="absolute">
+            <image id="background" height="100%" width="100%" filename="Interface/Menu/menu_background.png" childLayout="absolute" valign="top" y="0px" x="0px">
+                <panel id="title" childLayout="center" width="36.47%" height="20.28%" x="31.76%" valign="center" >
+                    <image id="badtitle" width="*" height="*" filename="Interface/Menu/title.png"/>
+                </panel>
+                <image id="contentframe" height="70.55%" width="90.35%" align="center" filename="Interface/Menu/frame.png" y="22%" x="4.8%"/>
+                <image id="headline0" height="8.82%" width="31.17%" filename="Interface/Menu/createserver/settings_active.png" y="35%" x="5.42%"/>
+                <image id="headline1" height="8.82%" width="31.17%" filename="Interface/Menu/createserver/modus_inactive.png" y="35%" x="34.42%"/>
+                <image id="headline2" height="8.82%" width="31.17%" filename="Interface/Menu/createserver/map_inactive.png" y="35%" x="64.42%"/>
+                <panel id="content" height="*" width="*" childLayout="center">
+                    <image id="contentframe" height="90%" width="90%" align="center" filename="Interface/Menu/frame.png" childLayout="vertical" valign="center" y="0px" x="0px">
+                        <panel id="GPanel6" height="18%" width="*" childLayout="horizontal">
+                            <panel id="GPanel7" height="*" width="20%" align="left" childLayout="center"/>
+                            <panel id="GPanel7a" height="25px" width="*" childLayout="horizontal"/>
+                            <image id="GImage16a" height="25px" width="60px" valign="center" filename="Interface/Menu/menu_back.png">
+                                <interact onClick="screen(start)" />
+                            </image>
+                            <image id="GImage16b" height="25px" width="65px" valign="center" filename="Interface/Menu/menu_start.png">
+                                <interact onClick="startServer()" />
+                            </image>
+                            <image id="GImage16c" height="25px" width="110px" valign="center" filename="Interface/Menu/menu_settings.png">
+                                <interact onClick="settings()" />
+                            </image>
+                        </panel>
+                        <panel id="GPanel19" height="*"  width="*" childLayout="vertical">
+                            <panel id="GPanel20" height="50px"  width="*" childLayout="horizontal">
+                                <panel id="GPanel22" height="*" width="*" childLayout="center">
+                                    <image id="GImage15" height="50px" width="265px" filename="Interface/Menu/createserver/settings_active.png"/>
+                                </panel>
+                                <panel id="GPanel23" height="*" width="*" childLayout="center">
+                                    <image id="GImage16" height="50px" width="265px" filename="Interface/Menu/createserver/modus_inactive.png">
+                                        <interact onClick="screen(createserver_modus)" />
+                                    </image>
+                                </panel>
+                                <panel id="GPanel24" height="*" width="*" childLayout="center">
+                                    <image id="GImage17" height="50px" width="265px" filename="Interface/Menu/createserver/map_inactive.png">
+                                        <interact onClick="screen(createserver_map)" />
+                                    </image>
+                                </panel>
+                            </panel>
+                        </panel>
+                    </image>
+                </panel>
+            </image>
+        </layer>
+    </screen>
+    <screen id="createserver_modus" controller="bad.vector.menu.BadScreenController">
+        <layer id="initlayer" childLayout="absolute">
+            <image id="background" height="100%" width="100%" filename="Interface/Menu/menu_background.png" childLayout="vertical" valign="top" y="0px" x="0px">
+                <panel id="title" height="115px" width="100%" childLayout="center" valign="center">
+                    <image id="badtitle" height="115px" width="310px" filename="Interface/Menu/title.png"/>
+                </panel>
+                <panel id="content" height="*" width="*" childLayout="center">
+                    <image id="contentframe" height="90%" width="90%" align="center" filename="Interface/Menu/frame.png" childLayout="vertical" valign="center" y="0px" x="0px">
+                        <panel id="GPanel6" height="18%" width="*" childLayout="horizontal">
+                            <panel id="GPanel7" height="*" width="20%" align="left" childLayout="center"/>
+                            <panel id="GPanel8" height="*" width="*" valign="center" align="right" childLayout="horizontal" >
+                                <panel id="GPanel7a" height="25px" width="*" childLayout="horizontal"/>
+                                <image id="GImage16a" height="25px" width="60px" valign="center" filename="Interface/Menu/menu_back.png">
+                                    <interact onClick="screen(start)" />
+                                </image>
+                                <image id="GImage16b" height="25px" width="65px" valign="center" filename="Interface/Menu/menu_start.png">
+                                    <interact onClick="start(start)" />
+                                </image>
+                                <image id="GImage16c" height="25px" width="110px" valign="center" filename="Interface/Menu/menu_settings.png">
+                                    <interact onClick="settings()" />
+                                </image>
+                            </panel>
+                        </panel>
+                        <panel id="GPanel19" height="*"  width="*" childLayout="vertical">
+                            <panel id="GPanel20" height="50px"  width="*" childLayout="horizontal">
+                                <panel id="GPanel22" height="*" width="*" childLayout="center">
+                                    <image id="GImage15" height="50px" width="265px" filename="Interface/Menu/createserver/settings_inactive.png">
+                                        <interact onClick="screen(createserver_settings)" />
+                                    </image>
+                                </panel>
+                                <panel id="GPanel23" height="*" width="*" childLayout="center">
+                                    <image id="GImage16" height="50px" width="265px" filename="Interface/Menu/createserver/modus_active.png"/>
+                                </panel>
+                                <panel id="GPanel24" height="*" width="*" childLayout="center">
+                                    <image id="GImage17" height="50px" width="265px" filename="Interface/Menu/createserver/map_inactive.png">
+                                        <interact onClick="screen(createserver_map)" />
+                                    </image>
+                                </panel>
+                            </panel>
+                            <panel id="GPanel25" height="*" width="*" childLayout="center" valign="center">
+                                <panel id="GPanel26" height="200px" backgroundImage="Interface/Menu/createserver/modusframe.png" width="270px" childLayout="absolute">
+                                    <panel id="modusimage" style="bad-modus-0" width="270px" height="200px" x="0px" y="0px"/>
+                                    <panel id="GPanel27" style="bad-modus-left-button" width="85px" height="130px" x="15px" y="17px">
+                                        <interact onClick="switchGameMode(left)" />
+                                    </panel>
+                                    <panel id="GPanel28" style="bad-modus-right-button" width="85px" height="130px" x="176px" y="17px">
+                                        <interact onClick="switchGameMode(right)" />
+                                    </panel>
+                                </panel>
+                            </panel>
+                        </panel>
+                    </image>
+                </panel>
+            </image>
+        </layer>
+    </screen>
+    <screen id="createserver_map" controller="bad.vector.menu.BadScreenController">
+        <layer id="initlayer" childLayout="absolute">
+            <image id="background" height="100%" width="100%" filename="Interface/Menu/menu_background.png" childLayout="vertical" valign="top" y="0px" x="0px">
+                <panel id="title" height="115px" width="100%" childLayout="center" valign="center">
+                    <image id="badtitle" height="115px" width="310px" filename="Interface/Menu/title.png"/>
+                </panel>
+                <panel id="content" height="*" width="*" childLayout="center">
+                    <image id="contentframe" height="90%" width="90%" align="center" filename="Interface/Menu/frame.png" childLayout="vertical" valign="center" y="0px" x="0px">
+                        <panel id="GPanel6" height="18%" width="*" childLayout="horizontal">
+                            <panel id="GPanel7" height="*" width="20%" align="left" childLayout="center"/>
+                            <panel id="GPanel7a" height="25px" width="*" childLayout="horizontal"/>
+                            <image id="GImage16a" height="25px" width="60px" valign="center" filename="Interface/Menu/menu_back.png">
+                                <interact onClick="screen(start)" />
+                            </image>
+                            <image id="GImage16b" height="25px" width="65px" valign="center" filename="Interface/Menu/menu_start.png">
+                                <interact onClick="start(start)" />
+                            </image>
+                            <image id="GImage16c" height="25px" width="110px" valign="center" filename="Interface/Menu/menu_settings.png">
+                                <interact onClick="settings()" />
+                            </image>
+                        </panel>
+                        <panel id="GPanel19" height="*"  width="*" childLayout="vertical">
+                            <panel id="GPanel20" height="50px"  width="*" childLayout="horizontal">
+                                <panel id="GPanel22" height="*" width="*" childLayout="center">
+                                    <image id="GImage15" height="50px" width="265px" filename="Interface/Menu/createserver/settings_inactive.png">
+                                        <interact onClick="screen(createserver_settings)" />
+                                    </image>
+                                </panel>
+                                <panel id="GPanel23" height="*" width="*" childLayout="center">
+                                    <image id="GImage16" height="50px" width="265px" filename="Interface/Menu/createserver/modus_inactive.png">
+                                        <interact onClick="screen(createserver_modus)" />
+                                    </image>
+                                </panel>
+                                <panel id="GPanel24" height="*" width="*" childLayout="center">
+                                    <image id="GImage17" height="50px" width="265px" filename="Interface/Menu/createserver/map_active.png"/>
+                                </panel>
+                            </panel>
+                        </panel>
+                    </image>
+                </panel>
+            </image>
+        </layer>
+    </screen>
+</nifty>

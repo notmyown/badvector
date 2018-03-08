@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<nifty>
+    <useControls filename="nifty-default-controls.xml"/>
+    <useStyles filename="nifty-default-styles.xml"/>
+    <screen id="start"  controller="bad.vector.menu.BadScreenController">
+        <layer id="init layer" childLayout="absolute">
+            <image id="background" height="100%" width="100%" filename="Interface/Menu/menu_background.png" childLayout="vertical" valign="top" y="0px" x="0px">
+                <panel id="title" height="115px" style="nifty-panel-simple" backgroundColor="#ffffffff" width="100%" backgroundImage="Interface/Menu/title.png" childLayout="center" valign="center">
+                    <image id="badtitle" height="115px" width="310px" filename="Interface/Menu/title.png"/>
+                </panel>
+                <panel id="content" height="*" style="nifty-panel-simple" width="*" childLayout="center">
+                    <image id="contentframe" height="90%" width="90%" align="center" filename="Interface/Menu/frame.png" childLayout="vertical" valign="center" y="0px" x="0px">
+                        <panel id="GPanel6" height="15%" style="nifty-panel-simple" width="*" childLayout="horizontal">
+                            <panel id="GPanel7" height="*" style="nifty-panel-simple" width="20%" align="left" childLayout="center"/>
+                            <panel id="GPanel8" height="*" style="nifty-panel-simple" width="*" align="right" childLayout="horizontal"/>
+                        </panel>
+                        <panel id="GPanel19" height="*" style="nifty-panel-simple" width="*" childLayout="vertical">
+                            <panel id="GPanel20" height="50px" style="nifty-panel-simple" width="*" childLayout="horizontal" y="75" x="262">
+<panel id="GPanel22" height="*" style="nifty-panel-simple" width="*" childLayout="center" y="23" x="463">
+    <image id="GImage15" height="50px" width="265px" filename="Interface/Menu/createserver/settings_inactive.png"/>
+</panel>
+<panel id="GPanel23" height="*" style="nifty-panel-simple" width="*" childLayout="center"/>
+<panel id="GPanel24" height="*" style="nifty-panel-simple" width="*" childLayout="center"/>
+                            </panel>
+                            <panel id="GPanel25" height="*" style="nifty-panel-simple" width="*" childLayout="center" valign="center">
+<panel id="GPanel26" height="200px" style="nifty-panel-simple" width="270px" backgroundImage="Interface/Menu/frame.png" childLayout="absolute" y="235" x="355"/>
+                            </panel>
+                        </panel>
+                    </image>
+                </panel>
+            </image>
+        </layer>
+    </screen>
+</nifty>

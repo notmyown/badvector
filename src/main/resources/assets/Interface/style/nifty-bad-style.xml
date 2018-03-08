@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty-styles>
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <!-- style for the button background panel -->
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <style id="bad-server-create-button">
+    <attributes backgroundImage="Interface/Menu/start/create-server.png" paddingLeft="1px" paddingTop="10px" width="190px" height="210px" childLayout="center" visibleToMouse="true" />
+    <effect>
+      <onHover name="imageOverlay" filename="Interface/Menu/start/create-server-active.png" post="true" />
+      <!--onFocus name="imageOverlay" filename="Interface/Menu/start/create-server-active.png" post="true" /-->
+      <onEnabled name="renderQuad" startColor="#2228" endColor="#2220" post="true" length="150" />
+      <onDisabled name="renderQuad" startColor="#2220" endColor="#2228" post="true" length="150" />
+    </effect>
+  </style>
+  
+  <style id="bad-server-join-button">
+    <attributes backgroundImage="Interface/Menu/start/join-server.png" paddingLeft="1px" paddingTop="10px" width="190px" height="210px" childLayout="center" visibleToMouse="true" />
+    <effect>
+      <onHover name="imageOverlay" filename="Interface/Menu/start/join-server-active.png" post="true" />
+      <onFocus name="imageOverlay" filename="Interface/Menu/start/join-server-active.png" post="true" />
+      <onEnabled name="renderQuad" startColor="#2228" endColor="#2220" post="true" length="150" />
+      <onDisabled name="renderQuad" startColor="#2220" endColor="#2228" post="true" length="150" />
+    </effect>
+  </style>
+  
+  <style id="bad-modus-left-button">
+    <effect>
+      <onHover name="imageOverlay" filename="Interface/Menu/createserver/modusframehover_left.png" post="true" />
+      <onEnabled name="renderQuad" startColor="#2228" endColor="#2220" post="true" length="150" />
+      <onDisabled name="renderQuad" startColor="#2220" endColor="#2228" post="true" length="150" />
+    </effect>
+  </style>
+  
+  <style id="bad-modus-right-button">
+    <effect>
+      <onHover name="imageOverlay" filename="Interface/Menu/createserver/modusframehover_right.png" post="true" />
+      <onEnabled name="renderQuad" startColor="#2228" endColor="#2220" post="true" length="150" />
+      <onDisabled name="renderQuad" startColor="#2220" endColor="#2228" post="true" length="150" />
+    </effect>
+  </style>
+  
+  <style id="bad-modus-0">
+    <attributes backgroundImage="Interface/Menu/createserver/modus0.png" />
+  </style>
+  <style id="bad-modus-1">
+    <attributes backgroundImage="Interface/Menu/createserver/modus1.png" />
+  </style>
+  <style id="bad-modus-2">
+    <attributes backgroundImage="Interface/Menu/createserver/modus2.png" />
+  </style>
+  <style id="bad-modus-3">
+    <attributes backgroundImage="Interface/Menu/createserver/modus3.png" />
+  </style>
+  
+  <style id="bad-start-0">
+    <attributes backgroundImage="Interface/Menu/start/start0.png" />
+  </style>
+  <style id="bad-start-1">
+    <attributes backgroundImage="Interface/Menu/start/start1.png" />
+  </style>
+  
+    <style id="bad-red">
+    <attributes backgroundImage="Interface/red.png" />
+  </style>
+  
+  
+  <style id="style_selection_main_start">
+    <effect>
+      <onHover name="imageOverlay" filename="Interface/Menu/start/create-server-active.png" post="true" />
+    </effect>
+  </style>
+  <style id="style_selection_main_join">
+    <effect>
+      <onHover name="imageOverlay" filename="Interface/Menu/start/join-server-active.png" post="true" />
+    </effect>
+  </style>
+  
+</nifty-styles>
