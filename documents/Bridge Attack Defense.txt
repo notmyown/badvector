@@ -1,0 +1,104 @@
+1 Einleitung
+	Dieses Dokument dient als Sammelablage für Ideen und User-Stories zur Umsetzung der Weltraum-Brückensimulation „BAD“.
+	Dabei handelt es sich um ein kooperatives Spiel, bei dem die Spieler die Rollen von unterschiedlichen Besatzungsmitgliedern eines Raumschiffs übernehmen.
+	Jede Rolle hat bestimmte spezifische Aufgaben, die zur Erreichung der Gruppenziele kombiniert werden müssen.
+2 Crew
+	
+not_my_own - Marco
+Henne
+Simon
+Edzard
+Gregor
+Bengt
+
+
+3 Stationen
+	* Stationen haben 3 Modi
+		* Automatic
+		* Noob
+		* Pro
+	3.1 Captain
+	* Koordiniert Anzeige des Hauptbildschirms
+	* HUD steuern/einstellen
+	3.2 Weapons
+	* Laden von unterschiedlichen Waffen
+	* Bekämpfen von Gegnern
+	* Steuern der Schilde
+	* manueller Feuermodus
+	3.3 Pilot
+	* Programmierbare Standardmanöver
+	* Navigieren des Schiffes
+	* Berechnen von Kursen durch bestimmte Areale
+	* Berechnen des Kurses durch "Ziehen von Vektoren"
+		o Gravitation kann Kurs verändern (Sonnen, Schwarze Löcher)
+		o Wird man beschädigt oder kommt während dem auto-Kurs einer Gefahrenquelle zu nahe springt man in den manuelle Steuerung
+		o Jump-Drive zum Überspringen von großen Distanzen
+			bestimmter Radius
+	3.4 Sience
+	* Filter für Hauptschirm - Sehen von Spuren
+	* Erforschen von Upgrades -> Techtree
+	* Erkennen von versteckten Sprungpunkten
+	* Scannen von Gegenern und Umgebung
+	* Ermitteln der Schildfrequence
+	* Kombinieren von Umgebungsparametern zur bessereren Schiffsperformance
+		o Scannen von Planeten / sonnen für Gravitation -> zur Berchnung des Kurses
+		o Z.B Deflektorschilde emmitieren Tachionen-Strahlen um eine Sogwirkung im polarisierten Partikelnebel zu erhalten. --> Schiff ist schneller ohne Energie zu verlieren
+	3.5 Communication
+	* Anfragen von Ressourcen bei Verbündeten
+	* Funkverkehr von Gegnern hacken und ausspionieren
+	* Notruf absetzen
+	* Funksonden steuern
+	* Lieferheld (embeded Browser)
+	* unterschiedliche Gegner gegeneinander aufbringen
+	3.6 Engineer
+	* Reparieren des Schiffes
+	* Bauen von Geschützen
+	* Bauen von Sprung-Marken
+	* Verteilung von Energie
+	* Kombinieren von Bauelementen zur bessereren Schiffsperformance
+		o Energie über die Mikrowelle in der Boardküche lenken statt über den Fluxkompensator im Maschienenraum -> stärkere Schilde wenn man gegen Weltraumpiraten kämpft
+	3.7 ELOKA - Elektronische Kampfführung
+	* Tarnung
+		sich selbst
+		aufdecken
+		Täuschen von Raketen
+	* Eindringen in die IT des Gegners und "Auschschalten von Funktionen" des anderen Schiffes
+4 User-Stories
+	Grundprinzip:
+	Die "Crew" steuert ein Schiff wobei jeder seine spezifischen Aufgaben hat
+	
+	an Stationen kann man Aufträge annehmen und ausführen
+	
+	Startpunkt:
+	Sektor 0 - mit einer Aufgabe
+	
+	
+	
+	
+5 Glossar
+BAD - Bridge: Attack n‘ Defense
+
+AddOn: - ASS : Advanced Star Ship   - BAD:ASS 
+z.B nur mit diesem AddOn lässt sich das Schiff auch Upgraden (Einsammeln von Items, Ressourcen etc.)
+
+AddOn: - WOLF – Wide Operation and Large Fleet – BAD:WOLF   
+z.B MultiShip-Modus
+
+AddOn: - MOON – Mines On Orbit Navigation – BAD:MOON 
+z.B mit dem Addon lassen sich Monde besiedeln um dort Raketen zu produzieren
+
+AddOn: - BOYS – Being on your Ship – BAD:BOYS 
+z.B man kann durchs Shiff laufen und dort direkt Aktionen ausführen (z.B Pokern). 
+
+AddOn: - IDEA – In Deep Exploration Action – BAD:IDEA 
+z.B Wurmlöcher um in ander Systeme zu gelangen oder schneller innerhalb des Systems zu navigieren
+
+AddOn: - TEMPER – Tempest EnRole – BAD:TEMPER (ein Sturm zieht auf) 
+Story AddOn oder Ionen-Stürme im All als Hinderniss und/oder Quelle für Ressourcen 
+
+AddOn: - FORTUNE – Fortress Universe – BAD:FORTUNE (Das Unglück) 
+Story AddOn
+
+AddOn: - SEED – Sabotage, Endeaver to Destroy – BAD:SEED (Das schwarze Schaf)
+Einer der Besatzung hat einen Spezialauftrag der dem eigentlichen auftrag entgegenwirkt
+
