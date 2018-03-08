@@ -4,15 +4,16 @@
  */
 package bad.vector.entities.tasks.helm;
 
-import bad.vector.BADVector;
-import bad.vector.entities.Space;
-import bad.vector.messages.ShipDataMessage;
 import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.control.AbstractControl;
+
+import bad.vector.BADVector;
+import bad.vector.entities.Space;
+import bad.vector.messages.ShipDataMessage;
 
 public class HelmControl extends AbstractControl {
 
@@ -82,7 +83,7 @@ public class HelmControl extends AbstractControl {
 			app.getShipNode().setLocalRotation(app.getShipNode().getLocalRotation().mult(this.rollRight));
 		}
 		if (this.up || this.down || this.left || this.right) {
-			this.app.getShipData().setRotation(this.spatial.getLocalRotation());
+      this.app.getShipData().setRotation(app.getShipNode().getLocalRotation());
 			this.app.getHudText().setText(this.app.getShipData().getLocation().toString());
 			this.app.getClient().send(new ShipDataMessage(this.app.getShipData()));
 		}
